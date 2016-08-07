@@ -1,0 +1,8 @@
+# Configuration file
+
+drain {
+    # This is the maximum radius for the drain [range: 5 ~ 1000, default: 20]
+    I:"Max Radius"=20
+}
+
+

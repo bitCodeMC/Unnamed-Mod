@@ -1,0 +1,44 @@
+package com.bitCode.test.entities;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFalling;
+import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityFallingBlock;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTBase;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public class ReversedFallingBlockEntity extends EntityFallingBlock {
+	 private IBlockState fallTile;
+	    public int fallTime;
+	    public boolean shouldDropItem = true;
+	    private boolean canSetAsBlock;
+	    private boolean hurtEntities;
+	    private int fallHurtMax = 40;
+	    private float fallHurtAmount = 2.0F;
+	    public NBTTagCompound tileEntityData;
+	    protected static final DataParameter<BlockPos> field_184532_d = EntityDataManager.<BlockPos>createKey(EntityFallingBlock.class, DataSerializers.BLOCK_POS);
+
+	public ReversedFallingBlockEntity(World worldIn) {
+		super(worldIn);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ReversedFallingBlockEntity(World worldIn, double x, double y, double z, IBlockState fallingBlockState) {
+		super(worldIn, x, y, z, fallingBlockState);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

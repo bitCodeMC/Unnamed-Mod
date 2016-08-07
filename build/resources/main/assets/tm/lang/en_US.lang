@@ -1,0 +1,5 @@
+item.test_item.name=Test Item
+item.coalnut.name=Coalnut
+tile.test_block.name=Test Block
+
+itemGroup.creativeTab=Test Mod

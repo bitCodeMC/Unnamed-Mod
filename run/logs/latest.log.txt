@@ -1,0 +1,104 @@
+[22:19:19] [Client thread/INFO]: Setting user: Player589
+[22:19:23] [Client thread/WARN]: Skipping bad option: lastServer:
+[22:19:23] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:19:27] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[22:19:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:19:30] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[22:19:30] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:19:30] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[22:19:30] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[22:19:30] [Thread-8/WARN]: ERROR MESSAGE:
+[22:19:30] [Thread-8/INFO]: Could not locate OpenAL library.
+[22:19:30] [Thread-8/WARN]: STACK TRACE:
+[22:19:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[22:19:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[22:19:30] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[22:19:30] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[22:19:30] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[22:19:30] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[22:19:30] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[22:19:30] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[22:19:30] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[22:19:30] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:19:30] [Thread-10/INFO]: Switching to No Sound
+[22:19:30] [Thread-10/INFO]: (Silent Mode)
+[22:19:31] [Sound Library Loader/INFO]: Sound engine started
+[22:19:33] [Client thread/INFO]: Created: 16x16 textures-atlas
+[22:19:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[22:19:37] [Client thread/INFO]: SoundSystem shutting down...
+[22:19:37] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[22:19:37] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:19:37] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[22:19:37] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:19:37] [Thread-12/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[22:19:37] [Thread-12/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[22:19:37] [Thread-12/WARN]: ERROR MESSAGE:
+[22:19:37] [Thread-12/INFO]: Could not locate OpenAL library.
+[22:19:37] [Thread-12/WARN]: STACK TRACE:
+[22:19:37] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[22:19:37] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[22:19:37] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[22:19:37] [Thread-12/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[22:19:37] [Thread-12/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[22:19:37] [Thread-12/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[22:19:37] [Thread-12/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[22:19:38] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[22:19:38] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[22:19:38] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:19:38] [Thread-14/INFO]: Switching to No Sound
+[22:19:38] [Thread-14/INFO]: (Silent Mode)
+[22:19:38] [Sound Library Loader/INFO]: Sound engine started
+[22:19:40] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[22:19:41] [Client thread/WARN]: Skipping bad option: lastServer:
+[22:19:42] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[22:19:53] [Server thread/INFO]: Starting integrated minecraft server version 1.10.2
+[22:19:53] [Server thread/INFO]: Generating keypair
+[22:19:54] [Server thread/INFO]: Preparing start region for level 0
+[22:19:56] [Server thread/INFO]: Preparing spawn area: 5%
+[22:19:57] [Server thread/INFO]: Preparing spawn area: 12%
+[22:19:58] [Server thread/INFO]: Preparing spawn area: 19%
+[22:19:59] [Server thread/INFO]: Preparing spawn area: 27%
+[22:20:00] [Server thread/INFO]: Preparing spawn area: 35%
+[22:20:01] [Server thread/INFO]: Preparing spawn area: 43%
+[22:20:02] [Server thread/INFO]: Preparing spawn area: 53%
+[22:20:03] [Server thread/INFO]: Preparing spawn area: 63%
+[22:20:04] [Server thread/INFO]: Preparing spawn area: 74%
+[22:20:05] [Server thread/INFO]: Preparing spawn area: 85%
+[22:20:06] [Server thread/INFO]: Preparing spawn area: 96%
+[22:20:06] [Server thread/INFO]: Changing view distance to 22, from 10
+[22:20:08] [Server thread/INFO]: Player589[local:E:4335e4a1] logged in with entity id 905 at (-193.5, 74.0, 248.5)
+[22:20:08] [Server thread/INFO]: Player589 joined the game
+[22:20:09] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@5029fabc[id=1a5e202b-4f68-3cab-a1c2-b7c265b33cf5,name=Player589,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3060) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:131) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_91]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_91]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_91]
+[22:20:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8319ms behind, skipping 166 tick(s)
+[22:20:19] [Server thread/INFO]: Player589 has just earned the achievement [Taking Inventory]
+[22:20:19] [Client thread/INFO]: [CHAT] Player589 has just earned the achievement [Taking Inventory]
+[22:21:16] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 40832ms behind, skipping 816 tick(s)
+[22:21:17] [Server thread/INFO]: [Player589: Set own game mode to Survival Mode]
+[22:21:17] [Client thread/INFO]: [CHAT] Your game mode has been updated to Survival Mode
+[22:21:18] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2649ms behind, skipping 52 tick(s)
+[22:21:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2566ms behind, skipping 51 tick(s)
+[22:21:51] [Server thread/INFO]: Saving and pausing game...
+[22:21:51] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Overworld
+[22:21:51] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/Nether
+[22:21:51] [Server thread/INFO]: Saving chunks for level 'Copy of Copy of Copy of Copy of'/The End

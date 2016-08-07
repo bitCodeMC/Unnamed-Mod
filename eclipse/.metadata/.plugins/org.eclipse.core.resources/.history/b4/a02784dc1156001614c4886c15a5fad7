@@ -1,0 +1,5 @@
+package com.bitCode.test.subscribeEvents;
+
+public class FeederUpdateEvent {
+
+}

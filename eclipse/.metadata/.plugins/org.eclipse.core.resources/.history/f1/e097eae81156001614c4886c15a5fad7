@@ -1,0 +1,17 @@
+package com.bitCode.test.subscribeEvents;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
+
+public class FeederUpdateEvent {
+	  public static WirelessChargerController instance = new WirelessChargerController();
+	 @SubscribeEvent
+	  public void onPlayerTick(TickEvent.PlayerTickEvent event)
+	  {
+		 EntityPlayer player=event.player;
+		 BlockPos pos = player.getPosition();
+		 
+	  }
+}

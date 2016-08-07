@@ -1,0 +1,22 @@
+package com.bitCode.test.entities.ai;
+
+import com.google.common.base.Predicate;
+
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
+import net.minecraft.entity.passive.EntityTameable;
+
+public class EntityAITraitorZombieHelper <T extends EntityLivingBase> extends EntityAINearestAttackableTarget<T>
+{
+    private final EntityTameable theTameable;
+
+    public EntityAITraitorZombieHelper( Class<T> classTarget, boolean checkSight, Predicate <? super T > targetSelector)
+    {
+        super(EntityZombie, classTarget, 10, checkSight, false, targetSelector);
+        this.theTameable = entityIn;
+    }
+    public boolean shouldExecute()
+    {
+        return !this.theTameable.isTamed() && super.shouldExecute();
+    }
+}

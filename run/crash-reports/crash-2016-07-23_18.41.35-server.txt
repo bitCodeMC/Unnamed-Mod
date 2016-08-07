@@ -1,0 +1,72 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 7/23/16 6:41 PM
+Description: Exception ticking world
+
+java.lang.IllegalArgumentException: Cannot get property PropertyInteger{name=density, clazz=class java.lang.Integer, values=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]} as it does not exist in BlockStateContainer{block=tm:smoke, properties=[]}
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.getValue(BlockStateContainer.java:192)
+	at com.bitCode.test.blocks.Smoke.updateTick(Smoke.java:31)
+	at net.minecraft.block.Block.randomTick(Block.java:552)
+	at net.minecraft.world.WorldServer.updateBlocks(WorldServer.java:480)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:224)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:768)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:683)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:155)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:532)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.getValue(BlockStateContainer.java:192)
+	at com.bitCode.test.blocks.Smoke.updateTick(Smoke.java:31)
+	at net.minecraft.block.Block.randomTick(Block.java:552)
+	at net.minecraft.world.WorldServer.updateBlocks(WorldServer.java:480)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:224)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player791'/247, l='New World', x=276.03, y=59.00, z=-268.48]]
+	Chunk stats: ServerChunkCache: 2026 Drop: 0
+	Level seed: 4603852286261988871
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (290,64,-259), Chunk: (at 2,4,13 in 18,-17; contains blocks 288,0,-272 to 303,255,-257), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 267436 game time, 27129 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 1648 (now: false), thunder time: 60670 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:768)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:683)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:155)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:532)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9
+	Operating System: Windows Server 2012 R2 (amd64) version 6.3
+	Java Version: 1.8.0_91, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 256644296 bytes (244 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.23 Powered by Forge 12.16.1.1887 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.9-12.16.1.1887.jar) 
+	UCHIJAAAA	Forge{12.16.1.1887} [Minecraft Forge] (forgeSrc-1.9-12.16.1.1887.jar) 
+	UCHIJAAAA	tm{1.0} [Test Mod] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player791'/247, l='New World', x=276.03, y=59.00, z=-268.48]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

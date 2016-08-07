@@ -1,0 +1,56 @@
+package com.bitCode.test.blocks;
+
+import com.bitCode.test.entities.ReversedFallingBlockEntity;
+
+import net.minecraft.block.BlockFalling;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.item.EntityFallingBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+
+public class ReversedFallingBlock extends BlockFalling {
+
+	public ReversedFallingBlock() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ReversedFallingBlock(Material materialIn) {
+		super(materialIn);
+		// TODO Auto-generated constructor stub
+	}
+	private void checkFallable(World worldIn, BlockPos pos)
+    {
+        if ((worldIn.isAirBlock(pos.down()) || canFallThrough(worldIn.getBlockState(pos.down()))) && pos.getY() >= 0)
+        {
+            int i = 32;
+
+            if (!fallInstantly && worldIn.isAreaLoaded(pos.add(-32, -32, -32), pos.add(32, 32, 32)))
+            {
+                if (!worldIn.isRemote)
+                {
+                    ReversedFallingBlockEntity entityfallingblock = new ReversedFallingBlockEntity(worldIn, (double)pos.getX() + 0.5D, (double)pos.getY(), (double)pos.getZ() + 0.5D, worldIn.getBlockState(pos));
+                    this.onStartFalling(entityfallingblock);
+                    worldIn.spawnEntityInWorld(entityfallingblock);
+                }
+            }
+            else
+            {
+                worldIn.setBlockToAir(pos);
+                BlockPos blockpos;
+
+                for (blockpos = pos.down(); (worldIn.isAirBlock(blockpos) || canFallThrough(worldIn.getBlockState(blockpos))) && blockpos.getY() > 0; blockpos = blockpos.down())
+                {
+                    ;
+                }
+
+                if (blockpos.getY() > 0)
+                {
+                    worldIn.setBlockState(blockpos.up(), this.getDefaultState());
+                }
+            }
+        }
+    }
+
+	
+    
+}

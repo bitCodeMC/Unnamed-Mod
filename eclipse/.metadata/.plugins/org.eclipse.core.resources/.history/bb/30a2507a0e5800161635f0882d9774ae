@@ -1,0 +1,8 @@
+package assets.tm.blockstates;
+
+public class Snippet {
+	public static void main(String[] args) {
+		chorus_flower.json
+	}
+}
+

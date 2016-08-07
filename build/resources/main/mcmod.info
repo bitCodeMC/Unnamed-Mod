@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tm",
+  "name": "Test Mod",
+  "description": "",
+  "version": "$1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bitCode"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

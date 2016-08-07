@@ -1,0 +1,74 @@
+[18:48:36] [Client thread/INFO]: Setting user: Player798
+[18:48:43] [Client thread/INFO]: LWJGL Version: 2.9.4
+[18:48:58] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[18:49:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:49:04] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[18:49:04] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:49:05] [Thread-8/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[18:49:05] [Thread-8/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[18:49:05] [Thread-8/WARN]: ERROR MESSAGE:
+[18:49:05] [Thread-8/INFO]: Could not locate OpenAL library.
+[18:49:05] [Thread-8/WARN]: STACK TRACE:
+[18:49:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[18:49:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[18:49:05] [Thread-8/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[18:49:05] [Thread-8/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[18:49:05] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[18:49:05] [Thread-8/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[18:49:05] [Thread-8/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[18:49:05] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[18:49:05] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[18:49:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:49:05] [Thread-10/INFO]: Switching to No Sound
+[18:49:05] [Thread-10/INFO]: (Silent Mode)
+[18:49:05] [Sound Library Loader/INFO]: Sound engine started
+[18:49:08] [Client thread/INFO]: Created: 16x16 textures-atlas
+[18:49:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Test Mod
+[18:49:12] [Client thread/INFO]: SoundSystem shutting down...
+[18:49:12] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:49:12] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:49:13] [Thread-12/INFO]: Initializing LWJGL OpenAL
+[18:49:13] [Thread-12/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:49:13] [Thread-12/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[18:49:13] [Thread-12/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[18:49:13] [Thread-12/WARN]: ERROR MESSAGE:
+[18:49:13] [Thread-12/INFO]: Could not locate OpenAL library.
+[18:49:13] [Thread-12/WARN]: STACK TRACE:
+[18:49:13] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[18:49:13] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[18:49:13] [Thread-12/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[18:49:13] [Thread-12/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[18:49:13] [Thread-12/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[18:49:13] [Thread-12/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[18:49:13] [Thread-12/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[18:49:13] [Sound Library Loader/WARN]: ERROR MESSAGE:
+[18:49:13] [Sound Library Loader/INFO]: Could not locate OpenAL library.
+[18:49:13] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:49:13] [Thread-14/INFO]: Switching to No Sound
+[18:49:13] [Thread-14/INFO]: (Silent Mode)
+[18:49:14] [Sound Library Loader/INFO]: Sound engine started
+[18:49:17] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[18:49:19] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[18:51:01] [Server thread/INFO]: Starting integrated minecraft server version 1.9
+[18:51:01] [Server thread/INFO]: Generating keypair
+[18:51:05] [Server thread/INFO]: Preparing start region for level 0
+[18:51:06] [Server thread/INFO]: Preparing spawn area: 0%
+[18:51:07] [Server thread/INFO]: Preparing spawn area: 11%
+[18:51:08] [Server thread/INFO]: Preparing spawn area: 59%
+[18:51:09] [Server thread/INFO]: Changing view distance to 22, from 10
+[18:51:11] [Server thread/INFO]: Player798[local:E:5bb10239] logged in with entity id 134 at (219.58802257697806, 51.677125274978046, -348.5254272167341)
+[18:51:11] [Server thread/INFO]: Player798 joined the game
+[18:52:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 77799ms behind, skipping 1555 tick(s)
+[18:52:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3672ms behind, skipping 73 tick(s)
+[18:53:00] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2984ms behind, skipping 59 tick(s)
+[18:53:23] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2625ms behind, skipping 52 tick(s)
+[18:53:27] [Server thread/INFO]: Saving and pausing game...
+[18:53:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:53:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:53:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:54:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2002ms behind, skipping 40 tick(s)
+[18:55:44] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2894ms behind, skipping 57 tick(s)
+[18:57:10] [Server thread/INFO]: Saving and pausing game...
+[18:57:10] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:57:10] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:57:10] [Server thread/INFO]: Saving chunks for level 'New World'/The End

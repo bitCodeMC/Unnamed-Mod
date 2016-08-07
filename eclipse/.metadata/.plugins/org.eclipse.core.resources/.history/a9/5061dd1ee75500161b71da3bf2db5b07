@@ -1,0 +1,20 @@
+package com.bitCode.test;
+
+import com.enderio.core.common.util.BlockCoord;
+	import net.minecraft.item.ItemStack;
+	import net.minecraft.world.World;
+
+	public abstract interface IFeeder
+	{
+	  public abstract World getWorld();
+	  
+	  public abstract BlockCoord getLocation();
+	  
+	  public abstract boolean chargeItems(ItemStack[] paramArrayOfItemStack);
+	  
+	  public abstract int takeEnergy(int paramInt);
+	  
+	  public abstract boolean isActive();
+	}
+
+
