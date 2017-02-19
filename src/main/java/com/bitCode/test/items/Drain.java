@@ -23,9 +23,8 @@ public class Drain extends Item {
 
 	public static int radius = 5;
 	public static int radiusOld = radius;
-
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn,
 			EnumHand hand) {
 
 		BlockPos playerLoc = playerIn.getPosition();
@@ -51,13 +50,13 @@ public class Drain extends Item {
 			}
 		}
 		// worldIn.isAnyLiquid();
-		return new ActionResult(EnumActionResult.PASS, itemStackIn);
+		return new ActionResult(EnumActionResult.PASS, playerIn.getHeldItem(hand));
 	}
-
+	@Override
 	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected) {
 		if (radiusOld != radius) {
 			radiusOld = radius;
-			entityIn.addChatMessage(new TextComponentTranslation("Radius: " + radius));
+			entityIn.sendMessage(new TextComponentTranslation("Radius: " + radius));
 		}
 	}
 

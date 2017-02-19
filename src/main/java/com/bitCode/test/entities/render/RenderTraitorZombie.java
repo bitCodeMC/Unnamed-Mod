@@ -9,9 +9,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderTraitorZombie extends RenderGiantZombie{
 
-
-	public RenderTraitorZombie(RenderManager rendermanagerIn, ModelBase modelbaseIn, float shadowsizeIn) {
-		super(rendermanagerIn, modelbaseIn, shadowsizeIn, shadowsizeIn);
+	public RenderTraitorZombie(RenderManager p_i47206_1_, float p_i47206_2_) {
+		super(p_i47206_1_, p_i47206_2_);
 		// TODO Auto-generated constructor stub
 	}
 

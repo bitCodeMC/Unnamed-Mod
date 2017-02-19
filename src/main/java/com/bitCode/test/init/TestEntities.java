@@ -4,7 +4,6 @@ import java.awt.Color;
 
 import com.bitCode.test.testMod;
 import com.bitCode.test.entities.Hedgehog;
-import com.bitCode.test.entities.ReversedFallingBlockEntity;
 import com.bitCode.test.entities.SuperSnowball;
 import com.bitCode.test.entities.TraitorZombie;
 import com.bitCode.test.items.TestItem;
@@ -24,10 +23,10 @@ public class TestEntities{
 	
 
 	public static void preInit() {
-		EntityRegistry.registerModEntity(TraitorZombie.class, "Traitor_Zombie", 1, testMod.instance, 80, 3, true, hexToDec("10F51A"), 7969893);
-		EntityRegistry.registerModEntity(Hedgehog.class, "Hedgehog", 1, testMod.instance, 80, 3, true, hexToDec("10F51A"), 799893);
+		//EntityRegistry.registerModEntity(null, TraitorZombie.class, "Traitor_Zombie", 1, testMod.instance, 80, 3, true, hexToDec("10F51A"), 7969893);
+	//	EntityRegistry.registerModEntity(null, Hedgehog.class, "Hedgehog", 1, testMod.instance, 80, 3, true, hexToDec("10F51A"), 799893);
 		//EntityRegistry.registerGlobalEntityID(TraitorZombie.class, "Traitor_Zombie", 3673673,7031082,0);
-		EntityRegistry.registerModEntity(ReversedFallingBlockEntity.class, "ReversedFallingBlock", 2, testMod.instance, 0, 3, true);
+		//EntityRegistry.registerModEntity(ReversedFallingBlockEntity.class, "ReversedFallingBlock", 2, testMod.instance, 0, 3, true);
 		
 	}
 	@SideOnly(Side.CLIENT)

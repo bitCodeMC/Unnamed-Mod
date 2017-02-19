@@ -128,7 +128,6 @@ public class Smoke extends Block {
 
 	}
 
-	@Override
 	@Nullable
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos) {
 		return NULL_AABB;

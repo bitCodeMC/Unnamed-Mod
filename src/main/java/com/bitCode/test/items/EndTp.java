@@ -11,10 +11,9 @@ import net.minecraft.world.World;
 
 public class EndTp extends Item{
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
-			EnumHand hand) {
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		playerIn.changeDimension(1);
 	
-		return new ActionResult(EnumActionResult.PASS, itemStackIn);
+		return new ActionResult(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
 	}
 }

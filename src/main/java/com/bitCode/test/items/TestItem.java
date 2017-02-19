@@ -20,7 +20,7 @@ public class TestItem extends Item {
 		this.setMaxDamage(10000);
 	}
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
+	public ActionResult<ItemStack> onItemRightClick( World worldIn, EntityPlayer playerIn,
 			EnumHand hand) {
 //		 this.addPropertyOverride(new ResourceLocation("tm:test_item_use"), new IItemPropertyGetter()
 //	        {
@@ -39,9 +39,9 @@ public class TestItem extends Item {
 
 			EntityLightningBolt lightning = new EntityLightningBolt(worldIn, x, y, z, false);
 			worldIn.addWeatherEffect(lightning);
-			itemStackIn.damageItem(5,playerIn);
+			playerIn.getHeldItem(hand).damageItem(5,playerIn);
 		}
-		return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+		return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(hand));
 	}
 
 	@Override

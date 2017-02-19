@@ -2,6 +2,7 @@ package com.bitCode.test.init;
 
 import com.bitCode.test.Reference;
 import com.bitCode.test.testMod;
+import com.bitCode.test.items.BedLocator;
 import com.bitCode.test.items.Coalnut;
 import com.bitCode.test.items.Drain;
 import com.bitCode.test.items.EndTp;
@@ -30,30 +31,32 @@ public class TestItems{
 	public static Item tape_measure;
 	public static Item drain;
 	public static Item coalnut;
+	public static Item bedLocator;
 	public static void init() {
-		test_item = new TestItem().setUnlocalizedName("test_item").setCreativeTab(testMod.creativeTab);
-		slime_in_bucket = new SlimeInBucket().setUnlocalizedName("slime_in_bucket").setCreativeTab(testMod.creativeTab);
-		slingshot = new Slingshot().setUnlocalizedName("slingshot").setCreativeTab(testMod.creativeTab);
-		soul_sand_dust = new SoulSandDust().setUnlocalizedName("soul_sand_dust").setCreativeTab(testMod.creativeTab);
-		super_snowball_item = new SuperSnowballItem().setUnlocalizedName("super_snowball_item").setCreativeTab(testMod.creativeTab);
-		end_tp = new EndTp().setUnlocalizedName("end_tp").setCreativeTab(testMod.creativeTab);
-		tape_measure = new TapeMeasure().setUnlocalizedName("tape_measure").setCreativeTab(testMod.creativeTab);
-		drain = new Drain().setUnlocalizedName("drain").setCreativeTab(testMod.creativeTab);
-		coalnut = new Coalnut().setUnlocalizedName("coalnut").setCreativeTab(testMod.creativeTab);
+		test_item = new TestItem().setUnlocalizedName("test_item").setRegistryName("test_item").setCreativeTab(testMod.creativeTab);
+		slime_in_bucket = new SlimeInBucket().setUnlocalizedName("slime_in_bucket").setRegistryName("slime_in_bucket").setCreativeTab(testMod.creativeTab);
+		slingshot = new Slingshot().setUnlocalizedName("slingshot").setRegistryName("slingshot").setCreativeTab(testMod.creativeTab);
+		soul_sand_dust = new SoulSandDust().setUnlocalizedName("soul_sand_dust").setRegistryName("soul_sand_dust").setCreativeTab(testMod.creativeTab);
+		super_snowball_item = new SuperSnowballItem().setUnlocalizedName("super_snowball_item").setRegistryName("super_snowball_item").setCreativeTab(testMod.creativeTab);
+		end_tp = new EndTp().setUnlocalizedName("end_tp").setRegistryName("end_tp").setCreativeTab(testMod.creativeTab);
+		tape_measure = new TapeMeasure().setUnlocalizedName("tape_measure").setRegistryName("tape_measure").setCreativeTab(testMod.creativeTab);
+		drain = new Drain().setUnlocalizedName("drain").setRegistryName("drain").setCreativeTab(testMod.creativeTab);
+		coalnut = new Coalnut().setUnlocalizedName("coalnut").setRegistryName("coalnut").setCreativeTab(testMod.creativeTab);
+		bedLocator = new BedLocator().setUnlocalizedName("bedLocator").setRegistryName("bedLocator").setCreativeTab(testMod.creativeTab);
 	}
 
 	public static void register() {
 		//TODO Fix Deprecated methods
-		GameRegistry.registerItem(test_item, test_item.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(slime_in_bucket, slime_in_bucket.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(slingshot, slingshot.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(soul_sand_dust, soul_sand_dust.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(super_snowball_item, super_snowball_item.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(end_tp, end_tp.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(tape_measure, tape_measure.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(drain, drain.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(coalnut, coalnut.getUnlocalizedName().substring(5));
-	
+		GameRegistry.register(test_item);
+		GameRegistry.register(slime_in_bucket);
+		GameRegistry.register(slingshot);
+		GameRegistry.register(soul_sand_dust);
+		GameRegistry.register(super_snowball_item);
+		GameRegistry.register(end_tp);
+		GameRegistry.register(tape_measure);
+		GameRegistry.register(drain);
+		GameRegistry.register(coalnut);
+		GameRegistry.register(bedLocator);
 		
 	}
 
@@ -67,6 +70,7 @@ public class TestItems{
 		registerRender(tape_measure);
 		registerRender(drain);
 		registerRender(coalnut);
+		registerRender(bedLocator);
 	}
 
 	public static void registerRender(Item item) {

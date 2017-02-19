@@ -15,7 +15,6 @@ import net.minecraft.entity.ai.EntityAITarget;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntitySkeleton;
 import net.minecraft.entity.monster.EntityZombie;
-import net.minecraft.entity.monster.SkeletonType;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Items;
@@ -59,62 +58,7 @@ public class EntityAITraitorZombieHelper<T extends EntityLivingBase> extends Ent
         };
     }
 
-    /**
-     * Returns whether the EntityAIBase should begin execution.
-     */
-    public boolean shouldExecute()
-    {
-        if (this.targetChance > 0 && this.taskOwner.getRNG().nextInt(this.targetChance) != 0)
-        {
-            return false;
-        }
-        else if (this.targetClass != EntityPlayer.class && this.targetClass != EntityPlayerMP.class)
-        {
-            List<T> list = this.taskOwner.worldObj.<T>getEntitiesWithinAABB(this.targetClass, this.getTargetableArea(this.getTargetDistance()), this.targetEntitySelector);
-
-            if (list.isEmpty())
-            {
-                return false;
-            }
-            else
-            {
-                Collections.sort(list, this.theNearestAttackableTargetSorter);
-                this.targetEntity = list.get(0);
-                if (this.targetEntity.getClass() == TraitorZombie.class){
-                	return false;
-                }
-                return true;
-            }
-        }
-        else
-        {
-            this.targetEntity = (T)this.taskOwner.worldObj.getNearestAttackablePlayer(this.taskOwner.posX, this.taskOwner.posY + (double)this.taskOwner.getEyeHeight(), this.taskOwner.posZ, this.getTargetDistance(), this.getTargetDistance(), new Function<EntityPlayer, Double>()
-            {
-                @Nullable
-                public Double apply(@Nullable EntityPlayer p_apply_1_)
-                {
-                    ItemStack itemstack = p_apply_1_.getItemStackFromSlot(EntityEquipmentSlot.HEAD);
-
-                    if (itemstack != null && itemstack.getItem() == Items.SKULL)
-                    {
-                        int i = itemstack.getItemDamage();
-                        boolean flag = EntityAITraitorZombieHelper.this.taskOwner instanceof EntitySkeleton && ((EntitySkeleton)EntityAITraitorZombieHelper.this.taskOwner).func_189771_df() == SkeletonType.NORMAL && i == 0;
-                        boolean flag1 = EntityAITraitorZombieHelper.this.taskOwner instanceof EntityZombie && i == 2;
-                        boolean flag2 = EntityAITraitorZombieHelper.this.taskOwner instanceof EntityCreeper && i == 4;
-
-                        if (flag || flag1 || flag2)
-                        {
-                            return Double.valueOf(0.5D);
-                        }
-                    }
-
-                    return Double.valueOf(1.0D);
-                }
-            }, (Predicate<EntityPlayer>)this.targetEntitySelector);
-            return this.targetEntity != null;
-        }
-    }
-
+  
     protected AxisAlignedBB getTargetableArea(double targetDistance)
     {
         return this.taskOwner.getEntityBoundingBox().expand(targetDistance, 4.0D, targetDistance);
@@ -145,4 +89,10 @@ public class EntityAITraitorZombieHelper<T extends EntityLivingBase> extends Ent
                 return d0 < d1 ? -1 : (d0 > d1 ? 1 : 0);
             }
         }
+
+	@Override
+	public boolean shouldExecute() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

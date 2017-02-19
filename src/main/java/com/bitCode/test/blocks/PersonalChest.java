@@ -53,7 +53,7 @@ public class PersonalChest extends BlockChest {
 		YPos.add(pos.getY());
 		ZPos.add(pos.getZ());
 		EnumFacing enumfacing = EnumFacing
-				.getHorizontal(MathHelper.floor_double((double) (placer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3)
+				.getHorizontal(MathHelper.floor((double) (placer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3)
 				.getOpposite();
 		state = state.withProperty(FACING, enumfacing);
 		BlockPos blockpos = pos.north();
@@ -96,7 +96,6 @@ public class PersonalChest extends BlockChest {
 		}
 	}
 
-	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
 		if (worldIn.isRemote) {

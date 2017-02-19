@@ -1,7 +1,5 @@
 package com.bitCode.test.items;
 
-
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Biomes;
 import net.minecraft.item.Item;
@@ -20,43 +18,38 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SlimeInBucket extends Item {
 	String slimesPossible;
-	
-	
+
 	@SideOnly(Side.CLIENT)
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
-			EnumHand hand) {
-		
-			if(getCanSlimesSpawnHere(playerIn, worldIn)){
-								slimesPossible ="true";	
-				playerIn.addChatMessage(new TextComponentTranslation("Slimes can spawn here!"));
-				
-				
-				
-			}
-			else{
+	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand) {
+		if (!worldIn.isRemote) {
+			if (getCanSlimesSpawnHere(playerIn, worldIn)) {
+				slimesPossible = "true";
+				playerIn.sendMessage(new TextComponentTranslation("Slimes can spawn here!"));
+
+			} else {
 				slimesPossible = "false";
-				playerIn.addChatMessage(new TextComponentTranslation("Slimes can't spawn here"));
+				playerIn.sendMessage(new TextComponentTranslation("Slimes can't spawn here"));
 			}
-			
-		
-		return new ActionResult(EnumActionResult.PASS, itemStackIn);
+
+		}
+		return new ActionResult(EnumActionResult.PASS, playerIn.getHeldItem(hand));
 	}
-	
+
 	@SideOnly(Side.CLIENT)
 	public boolean getCanSlimesSpawnHere(EntityPlayer playerIn, World worldObj) {
 		Double posX = playerIn.posX;
 		Double posY = playerIn.posY;
 		Double posZ = playerIn.posZ;
-		BlockPos blockpos = new BlockPos(MathHelper.floor_double(posX), 0, MathHelper.floor_double(posZ));
+		BlockPos blockpos = new BlockPos(MathHelper.floor(posX), 0, MathHelper.floor(posZ));
 		Chunk chunk = worldObj.getChunkFromBlockCoords(blockpos);
 
-		Biome biomegenbase = worldObj.getBiomeGenForCoords(blockpos);
+		Biome biomegenbase = worldObj.getBiomeForCoordsBody(blockpos);
 
 		if (biomegenbase == Biomes.SWAMPLAND) {
 			return true;
 		}
-		if (chunk.getRandomWithSeed(987234911L).nextInt(10) == 0 ) {
+		if (chunk.getRandomWithSeed(987234911L).nextInt(10) == 0) {
 			return true;
 		}
 

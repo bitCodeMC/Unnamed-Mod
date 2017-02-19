@@ -1,10 +1,10 @@
-version:512
+version:922
 invertYMouse:false
 mouseSensitivity:0.5
-fov:0.6
-gamma:1.0
+fov:0.0
+gamma:0.0
 saturation:0.0
-renderDistance:22
+renderDistance:12
 guiScale:0
 particles:0
 bobView:true
@@ -14,11 +14,11 @@ fboEnable:true
 difficulty:2
 fancyGraphics:true
 ao:2
-renderClouds:false
+renderClouds:true
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:
-lang:en_US
+lang:en_us
 chatVisibility:0
 chatColors:true
 chatLinks:true
@@ -29,7 +29,7 @@ fullscreen:false
 enableVsync:true
 useVbo:true
 hideServerAddress:false
-advancedItemTooltips:true
+advancedItemTooltips:false
 pauseOnLostFocus:true
 touchscreen:false
 overrideWidth:0
@@ -46,7 +46,7 @@ reducedDebugInfo:false
 useNativeTransport:true
 entityShadows:true
 mainHand:right
-attackIndicator:0
+attackIndicator:1
 showSubtitles:false
 realmsNotifications:true
 enableWeakAttacks:false
@@ -83,8 +83,8 @@ key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_key.increase:200
 key_key.decrease:208
-soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_master:0.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

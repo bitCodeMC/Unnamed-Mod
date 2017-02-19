@@ -16,7 +16,7 @@ public class TapeMeasure extends Item{
 	BlockPos firstPos;
 	boolean firstClick =true;
 	@Override
-	 public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
+	public EnumActionResult onItemUse(EntityPlayer playerIn, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
 	    {
 		 	if(firstClick){
 		 	firstPos=pos;
@@ -31,7 +31,7 @@ public class TapeMeasure extends Item{
 	  public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
     {
 		if(!firstClick){
-		entityIn.addChatMessage(new TextComponentTranslation(entityIn.getPosition().getX()-firstPos.getX()+""));
+		entityIn.sendMessage(new TextComponentTranslation(entityIn.getPosition().getX()-firstPos.getX()+""));
 		}
     }
 }

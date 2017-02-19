@@ -11,12 +11,11 @@ import net.minecraft.world.World;
 public class NoClipper extends Item {
 
 	public NoClipper() {
-		// TODO Auto-generated constructor stub
-	}
-	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
+	
+	}@Override
+	public ActionResult<ItemStack> onItemRightClick( World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
 		playerIn.noClip=true;
-        return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+        return new ActionResult(EnumActionResult.SUCCESS, playerIn.getHeldItem(hand));
     }
 }
